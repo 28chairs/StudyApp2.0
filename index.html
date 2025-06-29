@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Study App - Master the SAT with Confidence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SAT Master</span>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#home" class="sidebar-link active" data-section="home">Home</a></li>
+                <li><a href="#curriculum" class="sidebar-link" data-section="curriculum">Curriculum</a></li>
+                <li><a href="#practice" class="sidebar-link" data-section="practice">Practice Tests</a></li>
+                <li><a href="#mistakes" class="sidebar-link" data-section="mistakes">Mistake Center</a></li>
+                <li><a href="#progress" class="sidebar-link" data-section="progress">Progress</a></li>
+            </ul>
+            <div class="sidebar-lang-switch">
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="es">Español</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="home" class="main-section">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>Master the SAT with Confidence</h1>
+                        <p>Comprehensive study platform with structured curriculum, video lessons, and intelligent mistake tracking to help you achieve your target score.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Start Learning</button>
+                            <button class="btn btn-secondary">Take Practice Test</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-card">
+                            <div class="card-header">
+                                <h3>Your Progress</h3>
+                            </div>
+                            <div class="progress-stats">
+                                <div class="stat">
+                                    <span class="stat-number">75%</span>
+                                    <span class="stat-label">English Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">60%</span>
+                                    <span class="stat-label">Math Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">3/6</span>
+                                    <span class="stat-label">Tests Taken</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="curriculum" class="main-section">
+                <div class="container">
+                    <h2>Comprehensive Curriculum</h2>
+                    <div class="curriculum-tabs">
+                        <button class="tab-btn active" data-tab="english">English Section</button>
+                        <button class="tab-btn" data-tab="math">Math Section</button>
+                    </div>
+                    
+                    <!-- English Curriculum -->
+                    <div class="curriculum-content active" id="english">
+                        <div class="unit-grid">
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 1: Reading Fundamentals</h3>
+                                    <span class="unit-progress">80% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Active Reading Strategies</span>
+                                        <span class="lesson-status completed">✓</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Main Idea and Supporting Details</span>
+                                        <span class="lesson-status completed">✓</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Author's Purpose and Tone</span>
+                                        <span class="lesson-status in-progress">●</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Continue Learning</button>
+                            </div>
+
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 2: Evidence-Based Reading</h3>
+                                    <span class="unit-progress">45% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Citing Textual Evidence</span>
+                                        <span class="lesson-status completed">✓</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Paired Passages</span>
+                                        <span class="lesson-status in-progress">●</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Continue Learning</button>
+                            </div>
+
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 3: Writing and Language</h3>
+                                    <span class="unit-progress">20% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Grammar Fundamentals</span>
+                                        <span class="lesson-status in-progress">●</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Punctuation and Usage</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Sentence Structure</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Start Learning</button>
+                            </div>
+
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 4: Advanced Reading Skills</h3>
+                                    <span class="unit-progress">0% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vocabulary in Context</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Rhetorical Skills</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Start Learning</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Math Curriculum -->
+                    <div class="curriculum-content" id="math">
+                        <div class="unit-grid">
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 1: Heart of Algebra</h3>
+                                    <span class="unit-progress">65% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Linear Equations and Inequalities</span>
+                                        <span class="lesson-status completed">✓</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Systems of Linear Equations</span>
+                                        <span class="lesson-status completed">✓</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Linear Functions and Graphs</span>
+                                        <span class="lesson-status in-progress">●</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Continue Learning</button>
+                            </div>
+
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 2: Problem Solving and Data Analysis</h3>
+                                    <span class="unit-progress">30% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Ratios, Proportions, and Percentages</span>
+                                        <span class="lesson-status completed">✓</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Statistics and Data Interpretation</span>
+                                        <span class="lesson-status in-progress">●</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Scatterplots and Linear Models</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Continue Learning</button>
+                            </div>
+
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 3: Passport to Advanced Math</h3>
+                                    <span class="unit-progress">10% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Quadratic Equations</span>
+                                        <span class="lesson-status in-progress">●</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Functions and Their Graphs</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Polynomial Expressions</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Continue Learning</button>
+                            </div>
+
+                            <div class="unit-card">
+                                <div class="unit-header">
+                                    <h3>Unit 4: Additional Topics</h3>
+                                    <span class="unit-progress">0% Complete</span>
+                                </div>
+                                <div class="unit-lessons">
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Geometry and Trigonometry</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                    <div class="lesson">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Complex Numbers</span>
+                                        <span class="lesson-status pending">○</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline">Start Learning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="practice" class="main-section">
+                <div class="container">
+                    <h2>Practice Tests</h2>
+                    <p class="section-subtitle">6 full-length SAT simulations to build confidence and track your progress</p>
+                    
+                    <div class="tests-grid">
+                        <div class="test-card completed">
+                            <div class="test-header">
+                                <h3>Practice Test 1</h3>
+                                <span class="test-score">1450</span>
+                            </div>
+                            <div class="test-details">
+                                <div class="test-stat">
+                                    <span class="stat-label">Reading</span>
+                                    <span class="stat-value">720</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Math</span>
+                                    <span class="stat-value">730</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Time</span>
+                                    <span class="stat-value">2h 45m</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Review Test</button>
+                        </div>
+
+                        <div class="test-card completed">
+                            <div class="test-header">
+                                <h3>Practice Test 2</h3>
+                                <span class="test-score">1520</span>
+                            </div>
+                            <div class="test-details">
+                                <div class="test-stat">
+                                    <span class="stat-label">Reading</span>
+                                    <span class="stat-value">750</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Math</span>
+                                    <span class="stat-value">770</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Time</span>
+                                    <span class="stat-value">2h 50m</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Review Test</button>
+                        </div>
+
+                        <div class="test-card completed">
+                            <div class="test-header">
+                                <h3>Practice Test 3</h3>
+                                <span class="test-score">1480</span>
+                            </div>
+                            <div class="test-details">
+                                <div class="test-stat">
+                                    <span class="stat-label">Reading</span>
+                                    <span class="stat-value">740</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Math</span>
+                                    <span class="stat-value">740</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Time</span>
+                                    <span class="stat-value">2h 55m</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Review Test</button>
+                        </div>
+
+                        <div class="test-card available">
+                            <div class="test-header">
+                                <h3>Practice Test 4</h3>
+                                <span class="test-status">Available</span>
+                            </div>
+                            <div class="test-details">
+                                <div class="test-stat">
+                                    <span class="stat-label">Duration</span>
+                                    <span class="stat-value">3h 0m</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Questions</span>
+                                    <span class="stat-value">154</span>
+                                </div>
+                                <div class="test-stat">
+                                    <span class="stat-label">Sections</span>
+                                    <span class="stat-value">4</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Start Test</button>
+                        </div>
+
+                        <div class="test-card locked">
+                            <div class="test-header">
+                                <h3>Practice Test 5</h3>
+                                <span class="test-status">Locked</span>
+                            </div>
+                            <div class="test-details">
+                                <div class="test-stat">
+                                    <span class="stat-label">Unlock After</span>
+                                    <span class="stat-value">Test 4</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-disabled" disabled>Complete Test 4</button>
+                        </div>
+
+                        <div class="test-card locked">
+                            <div class="test-header">
+                                <h3>Practice Test 6</h3>
+                                <span class="test-status">Locked</span>
+                            </div>
+                            <div class="test-details">
+                                <div class="test-stat">
+                                    <span class="stat-label">Unlock After</span>
+                                    <span class="stat-value">Test 5</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-disabled" disabled>Complete Test 5</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="mistakes" class="main-section">
+                <div class="container">
+                    <h2>Mistake Center</h2>
+                    <p class="section-subtitle">Track your errors and get personalized recommendations</p>
+                    
+                    <div class="mistake-dashboard">
+                        <div class="mistake-overview">
+                            <div class="mistake-stat">
+                                <h3>Total Mistakes</h3>
+                                <span class="stat-number">47</span>
+                                <span class="stat-trend positive">↓ 12% this week</span>
+                            </div>
+                            <div class="mistake-stat">
+                                <h3>Weakest Area</h3>
+                                <span class="stat-number">Geometry</span>
+                                <span class="stat-trend negative">15 mistakes</span>
+                            </div>
+                            <div class="mistake-stat">
+                                <h3>Study Time</h3>
+                                <span class="stat-number">8.5h</span>
+                                <span class="stat-trend positive">This week</span>
+                            </div>
+                        </div>
+
+                        <div class="mistake-breakdown">
+                            <h3>Mistakes by Category</h3>
+                            <div class="category-list">
+                                <div class="category-item">
+                                    <div class="category-info">
+                                        <span class="category-name">Geometry</span>
+                                        <span class="category-count">15 mistakes</span>
+                                    </div>
+                                    <div class="category-bar">
+                                        <div class="bar-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-info">
+                                        <span class="category-name">Grammar</span>
+                                        <span class="category-count">12 mistakes</span>
+                                    </div>
+                                    <div class="category-bar">
+                                        <div class="bar-fill" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-info">
+                                        <span class="category-name">Reading Comprehension</span>
+                                        <span class="category-count">8 mistakes</span>
+                                    </div>
+                                    <div class="category-bar">
+                                        <div class="bar-fill" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-info">
+                                        <span class="category-name">Algebra</span>
+                                        <span class="category-count">6 mistakes</span>
+                                    </div>
+                                    <div class="category-bar">
+                                        <div class="bar-fill" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-info">
+                                        <span class="category-name">Vocabulary</span>
+                                        <span class="category-count">6 mistakes</span>
+                                    </div>
+                                    <div class="category-bar">
+                                        <div class="bar-fill" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recommendations">
+                            <h3>Study Recommendations</h3>
+                            <div class="recommendation-list">
+                                <div class="recommendation-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <div class="recommendation-content">
+                                        <h4>Focus on Geometry</h4>
+                                        <p>Review Unit 4.1: Geometry and Trigonometry. You've made 15 mistakes in this area.</p>
+                                    </div>
+                                    <button class="btn btn-sm">Review</button>
+                                </div>
+                                <div class="recommendation-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <div class="recommendation-content">
+                                        <h4>Grammar Practice</h4>
+                                        <p>Complete Unit 3.1: Grammar Fundamentals. Your grammar skills need improvement.</p>
+                                    </div>
+                                    <button class="btn btn-sm">Review</button>
+                                </div>
+                                <div class="recommendation-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <div class="recommendation-content">
+                                        <h4>Reading Strategy</h4>
+                                        <p>Practice Unit 1.1: Active Reading Strategies to improve comprehension.</p>
+                                    </div>
+                                    <button class="btn btn-sm">Review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="progress" class="main-section">
+                <div class="container">
+                    <h2>Your Progress</h2>
+                    <div class="progress-dashboard">
+                        <div class="progress-overview">
+                            <div class="progress-card">
+                                <h3>Overall Progress</h3>
+                                <div class="progress-circle">
+                                    <svg width="120" height="120">
+                                        <circle cx="60" cy="60" r="50" fill="none" stroke="#e0e7ff" stroke-width="8"/>
+                                        <circle cx="60" cy="60" r="50" fill="none" stroke="#6366f1" stroke-width="8" 
+                                                stroke-dasharray="314" stroke-dashoffset="78.5" transform="rotate(-90 60 60)"/>
+                                    </svg>
+                                    <div class="progress-text">
+                                        <span class="progress-percentage">75%</span>
+                                        <span class="progress-label">Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-stats">
+                                <div class="progress-stat">
+                                    <span class="stat-label">English</span>
+                                    <div class="stat-bar">
+                                        <div class="bar-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="stat-value">80%</span>
+                                </div>
+                                <div class="progress-stat">
+                                    <span class="stat-label">Math</span>
+                                    <div class="stat-bar">
+                                        <div class="bar-fill" style="width: 60%"></div>
+                                    </div>
+                                    <span class="stat-value">60%</span>
+                                </div>
+                                <div class="progress-stat">
+                                    <span class="stat-label">Practice Tests</span>
+                                    <div class="stat-bar">
+                                        <div class="bar-fill" style="width: 50%"></div>
+                                    </div>
+                                    <span class="stat-value">3/6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recent-activity">
+                            <h3>Recent Activity</h3>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Completed: Linear Functions and Graphs</h4>
+                                        <p>Unit 1.3 - Math Section</p>
+                                        <span class="activity-time">2 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-clipboard-check"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Practice Test 3 Completed</h4>
+                                        <p>Score: 1480 (Reading: 740, Math: 740)</p>
+                                        <span class="activity-time">1 day ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-book-open"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Started: Citing Textual Evidence</h4>
+                                        <p>Unit 2.1 - English Section</p>
+                                        <span class="activity-time">2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>SAT Master</h3>
+                            <p>Your comprehensive SAT preparation platform designed to help you achieve your target score.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#curriculum">Curriculum</a></li>
+                                <li><a href="#practice">Practice Tests</a></li>
+                                <li><a href="#mistakes">Mistake Center</a></li>
+                                <li><a href="#progress">Progress</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 SAT Master. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
